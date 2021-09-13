@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Algorithm_sophomore/1.0.0": {
+        "runtime": {
+          "Algorithm_sophomore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Algorithm_sophomore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

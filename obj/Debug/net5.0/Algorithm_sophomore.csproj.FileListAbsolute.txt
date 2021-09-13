@@ -1,0 +1,16 @@
+C:\Users\MSI\Desktop\Algorithm_sophomore\bin\Debug\net5.0\Algorithm_sophomore.exe
+C:\Users\MSI\Desktop\Algorithm_sophomore\bin\Debug\net5.0\Algorithm_sophomore.deps.json
+C:\Users\MSI\Desktop\Algorithm_sophomore\bin\Debug\net5.0\Algorithm_sophomore.runtimeconfig.json
+C:\Users\MSI\Desktop\Algorithm_sophomore\bin\Debug\net5.0\Algorithm_sophomore.runtimeconfig.dev.json
+C:\Users\MSI\Desktop\Algorithm_sophomore\bin\Debug\net5.0\Algorithm_sophomore.dll
+C:\Users\MSI\Desktop\Algorithm_sophomore\bin\Debug\net5.0\ref\Algorithm_sophomore.dll
+C:\Users\MSI\Desktop\Algorithm_sophomore\bin\Debug\net5.0\Algorithm_sophomore.pdb
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.csproj.AssemblyReference.cache
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.AssemblyInfoInputs.cache
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.AssemblyInfo.cs
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.dll
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\ref\Algorithm_sophomore.dll
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.pdb
+C:\Users\MSI\Desktop\Algorithm_sophomore\obj\Debug\net5.0\Algorithm_sophomore.genruntimeconfig.cache
