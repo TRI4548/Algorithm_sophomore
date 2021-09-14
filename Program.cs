@@ -15,6 +15,7 @@ namespace Algorithm_sophomore
                     Console.Write(i + " ");
                 }
             }
+            Console.Write(n);
         }
     }
 }
