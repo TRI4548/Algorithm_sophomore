@@ -8,53 +8,116 @@ namespace Algorithm_sophomore
         {
             Console.Write("Nhap n: ");
             int n = int.Parse(Console.ReadLine());
-            Console.WriteLine("Cac uoc cua n la: ");
-            for(int i = 1;i<=n/2;i++)
+            Console.Write("Ban muon random so lon nhat la bao nhieu?: ");
+            int max = int.Parse(Console.ReadLine());
+            Console.Write("Ban muon so phan tu trong mang la bao nhieu?: ");
+            int len = int.Parse(Console.ReadLine());
+            MyIntArray a = new MyIntArray(len);
+            a.RandomArray(max);
+            Array.Sort(a.Mang);
+            a.OutputArray();
+            if (a.FindContent(n) == -1)
             {
-                if(n%i == 0){
-                    Console.Write(i + " ");
-                }
+                Console.WriteLine("\nKhong tim thay gia tri can tim!");
             }
-            Console.Write(n);
+            else
+            {
+                Console.WriteLine($"\nTim thay {n} o vi tri i = {a.FindContent(n)}");
+            }
+            Console.WriteLine($"So lan thuc hien so sanh tuan tu la: {a.CountLinearSearchSteps(n)}");
+            Console.WriteLine($"So lan thuc hien so sanh nhi phan la: {a.CountBinarySearchSteps(n)}");
         }
     }
-    public class MyIntArray
+    class MyIntArray
     {
-        int [] a;
-        public int LinearSearch(int x)
+        private int[] array;
+        public int[] Mang
         {
-            for(int i = 0; i<a.Length;i++)
+            get => this.array;
+            set { this.array = value; }
+        }
+
+        public MyIntArray(int n = 8)
+        {
+            Mang = new int[n];
+        }
+
+        public int this[int i]
+        {
+            get => array[i];
+            set => array[i] = value;
+        }
+        public void Input()
+        {
+            string[] tk = Console.ReadLine().Split();
+            for(int i = 0; i<array.Length;i++)
             {
-                if(a[i] == x){
-                    return i;
+                array[i] = int.Parse(tk[i]);
+            }
+        }
+
+        public void RandomArray(int max)
+        {
+            for (int i = 0; i < Mang.Length; i++)
+            {
+                Random x = new Random();
+                Mang[i] = x.Next(max);
+            }
+        }
+        public void OutputArray()
+        {
+            Console.WriteLine("KET QUA MANG:");
+            for (int i = 0; i < Mang.Length; i++)
+            {
+                Console.Write(Mang[i] + " ");
+            }
+        }
+        public int FindContent(int x)
+        {
+            for (int i = 0; i < Mang.Length; i++)
+            {
+                if (Mang[i] == x)
+                {
+                    return i + 1;
                 }
             }
             return -1;
         }
-
-        public int BinarySearch(int[] a, int x)
+        public int CountLinearSearchSteps(int number_being_find)
         {
-            int left = a[0];
-            int right = a[a.Length - 1];
-            int mid;
-
-            while(left <= right)
+            for (int i = 0; i < Mang.Length; i++)
             {
-                mid = (left+right)/2;
-                if(a[mid] == x)
+                if (Mang[i] == number_being_find)
                 {
-                    return mid;
+                    return i + 1;
                 }
-                else if (a[mid] > x)
+            }
+            return Mang.Length;
+        }
+        public int CountBinarySearchSteps(int number_being_find)
+        {
+            int left = 0;
+            int right = Mang.Length - 1;
+            int mid;
+            int found = 0;
+            while (left <= right)
+            {
+                mid = (left + right) / 2;
+                found++;
+                if (Mang[mid] == number_being_find)
+                {
+                    break;
+                }
+                else if (number_being_find < Mang[mid])
                 {
                     right = mid - 1;
                 }
-                else if (a[mid] < x)
+                else if (number_being_find > Mang[mid])
                 {
                     left = mid + 1;
                 }
             }
-            return -1;
+            return found;
         }
     }
 }
